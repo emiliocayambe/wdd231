@@ -7,9 +7,16 @@
     <title>WDD 231 - Course Home Page | Emilio Cayambe</title>
     <meta name="description" content="Course home page for Web Frontend Development I by Emilio Cayambe.">
     <meta name="author" content="Emilio Cayambe">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/larger.css">
+
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/date.js" defer></script>
     <script src="scripts/course.js" defer></script>
@@ -31,30 +38,33 @@
 
     <main>
         <h1>Home</h1>
-        <div class="hero-container">
-            <section class="card about-me">
-                <div class="card-title">About Me</div>
-                <div class="card-content">
-                    <p>I am Emilio Cayambe, a developer and systems student. My approach bridges the gap between systems
-                        analysis theory and practical business operations. I lead the technological branch of
-                        Importadora La Maga, where I have implemented automated sales solutions, catalog management, and
-                        multimedia content production, always prioritizing technical efficiency in high-performance
-                        environments.</p>
-                </div>
-            </section>
-            <section class="card student-photo">
-                <div class="card-title">Student Photo</div>
-                <div class="card-content">
-                    <img src="images/profile.jpeg" alt="Photo of Emilio Cayambe">
-                </div>
-            </section>
-        </div>
 
+        <!-- Section 1 -->
+        <section class="card about-me">
+            <h2>About Me</h2>
+            <div class="card-content">
+                <p>I am Emilio Cayambe, a developer and systems student. My approach bridges the gap between systems
+                    analysis theory and practical business operations. I lead the technological branch of
+                    Importadora La Maga, where I have implemented automated sales solutions, catalog management, and
+                    multimedia content production, always prioritizing technical efficiency in high-performance
+                    environments.</p>
+            </div>
+        </section>
+
+        <!-- Section 2 -->
+        <section class="card student-photo">
+            <h2>Student Photo</h2>
+            <div class="card-content">
+                <img src="images/profile.jpeg" alt="Photo of Emilio Cayambe" width="300" height="300">
+            </div>
+        </section>
+
+        <!-- Section 3 -->
         <section class="card">
-            <div class="card-title">Web Certificate Courses</div>
+            <h2>Web Certificate Courses</h2>
             <div class="card-content">
                 <div id="course-buttons">
-                    <button id="all">All</button>
+                    <button id="all" class="active">All</button>
                     <button id="wdd">WDD</button>
                     <button id="cse">CSE</button>
                 </div>
@@ -63,12 +73,10 @@
             </div>
         </section>
     </main>
+
     <footer>
-
         <p>&copy; <span id="currentyear"></span> | Emilio Cayambe | Guayaquil, Ecuador</p>
-
         <p id="lastModified"></p>
-
     </footer>
 </body>
 

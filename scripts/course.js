@@ -84,19 +84,30 @@ function displayCourses(filter = 'All') {
 
     let totalCredits = 0;
 
+    // Filter logic
     const filtered = courses.filter(c => filter === 'All' || c.subject === filter);
 
     filtered.forEach(c => {
-        totalCredits += 3; // 3 credits per course
+        totalCredits += 3;
         const card = document.createElement('div');
         card.classList.add('card', 'course-card');
-        card.style.backgroundColor = c.completed ? '#d4edda' : '#fff3cd'; // style based on completion
-
         card.innerHTML = `<h3>${c.subject} ${c.number}</h3><p>${c.title}</p>`;
         container.appendChild(card);
     });
 
     document.querySelector('#total-credits').textContent = totalCredits;
+
+    // --- NEW LOGIC TO UPDATE ACTIVE CLASS ---
+    const buttons = document.querySelectorAll('#course-buttons button');
+    buttons.forEach(btn => {
+        // Remove 'active' class from all buttons
+        btn.classList.remove('active');
+
+        // Add 'active' class only to the clicked button
+        if (btn.id === filter.toLowerCase()) {
+            btn.classList.add('active');
+        }
+    });
 }
 
 // Listen for filter button clicks
