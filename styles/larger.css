@@ -1,0 +1,26 @@
+@media only screen and (min-width: 38rem) {
+    body { max-width: 1000px; margin: 0 auto; }
+
+    header { padding: 1rem 2rem; }
+    
+    /* Menú horizontal sin fondo azul */
+    #menu { display: none; }
+    nav ul { display: flex !important; background: none; gap: 20px; justify-content: center; }
+    nav a { color: #2c3e50; padding: 0.5rem; border-top: none; }
+    nav a:hover { background-color: #f4f4f4; border-radius: 4px; }
+
+    /* Cuadrícula de tarjetas */
+    #course-cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+    }
+
+    /* Hero Container (About + Photo) */
+    .hero-container {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 20px;
+        margin-bottom: 2rem;
+    }
+}
