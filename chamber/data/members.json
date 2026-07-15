@@ -1,0 +1,65 @@
+[
+    {
+        "name": "Banco Guayaquil",
+        "address": "Pichincha 105 y P. Carbo",
+        "phone": "+593 4-373-0100",
+        "website": "https://www.bancoguayaquil.com",
+        "image": "banco-guayaquil.png",
+        "membershipLevel": 3,
+        "tagline": "El banco de los guayaquileños."
+    },
+    {
+        "name": "Almacenes De Prati",
+        "address": "Luque 502 y Chimborazo",
+        "phone": "+593 4-373-1800",
+        "website": "https://www.deprati.com.ec",
+        "image": "deprati.png",
+        "membershipLevel": 3,
+        "tagline": "Estilo y tendencia para tu vida."
+    },
+    {
+        "name": "La Maga Distribuciones",
+        "address": "Av. Juan Tanca Marengo, Km 4.5",
+        "phone": "+593 99-999-9999",
+        "website": "https://lamaga.ec",
+        "image": "lamaga.png",
+        "membershipLevel": 2,
+        "tagline": "Soluciones logísticas y distribución digital de confianza."
+    },
+    {
+        "name": "Café de Tere",
+        "address": "Av. Guillermo Pareja Rolando, Alborada",
+        "phone": "+593 4-223-4567",
+        "website": "https://www.elcafedetere.com",
+        "image": "cafe-de-tere.png",
+        "membershipLevel": 2,
+        "tagline": "El auténtico sabor del desayuno guayaquileño."
+    },
+    {
+        "name": "Sweet & Coffee",
+        "address": "Malecón Simón Bolívar y Illingworth",
+        "phone": "+593 4-232-1100",
+        "website": "https://www.sweetandcoffee.com.ec",
+        "image": "sweet-coffee.png",
+        "membershipLevel": 3,
+        "tagline": "Disfruta el momento."
+    },
+    {
+        "name": "TecnoMundo Guayas",
+        "address": "C.C. Plaza Mayor, Local 12",
+        "phone": "+593 4-288-3456",
+        "website": "https://www.tecnomundo.com.ec",
+        "image": "tecnomundo.png",
+        "membershipLevel": 1,
+        "tagline": "Tu aliado en tecnología y hardware."
+    },
+    {
+        "name": "Consultora Naviera del Pacífico",
+        "address": "Puerto Marítimo, Edificio Astillero",
+        "phone": "+593 4-201-9876",
+        "website": "https://www.navieradelpacifico.com",
+        "image": "naviera-pacifico.png",
+        "membershipLevel": 1,
+        "tagline": "Asesoría y logística de comercio exterior."
+    }
+]

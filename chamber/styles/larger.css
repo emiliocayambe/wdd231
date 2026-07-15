@@ -1,0 +1,167 @@
+/* ==========================================================================
+   LARGE SCREENS / DESKTOP (>= 1024px)
+   ========================================================================== */
+
+@media only screen and (min-width: 38rem) {
+
+
+    /* 1. Header Layout Adjustment */
+    header {
+        display: flex !important;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+        position: static;
+        /* Removes absolute positioning side effects from small.css */
+    }
+
+    .header-container {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .logo {
+        width: 80px;
+        height: 80px;
+    }
+
+    .header-titles h1 {
+        font-size: 1.6rem;
+    }
+
+    /* Hide Hamburger Menu Button on Desktop */
+    #menu-button {
+        display: none !important;
+    }
+
+    /* ==========================================================================
+       2. Horizontal Navigation System
+       ========================================================================== */
+    #primary-nav {
+        display: block !important;
+        /* Forces navigation container to display */
+        width: auto;
+        margin-top: 0;
+    }
+
+    .nav-menu {
+        display: flex !important;
+        /* Forces the list to behave as a flexbox row */
+        flex-direction: row !important;
+        gap: 0.5rem;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav-menu li {
+        display: block;
+    }
+
+    .nav-menu li a {
+        color: var(--bg-color);
+        text-decoration: none;
+        padding: 0.6rem 1.2rem;
+        display: inline-block;
+        border-bottom: none !important;
+        /* Removes mobile list borders */
+        border-radius: 4px;
+        font-weight: 500;
+        white-space: nowrap;
+        /* Prevents text from breaking into multiple lines */
+        transition: background-color 0.3s, color 0.3s;
+    }
+
+    /* Hover and Active link styles */
+    .nav-menu li a:hover,
+    .nav-menu li a.active {
+        background-color: var(--secondary-color) !important;
+        /* Elegant gold based on logo */
+        color: var(--primary-color) !important;
+        /* High contrast navy text */
+    }
+
+    /* ==========================================================================
+       3. Main Content Adjustments
+       ========================================================================== */
+    main {
+        padding: 2rem;
+    }
+
+    /* GRID VIEW - 3 Columns on Desktop */
+    .grid-view {
+        display: grid !important;
+        grid-template-columns: repeat(3, 1fr) !important;
+        gap: 2rem;
+    }
+
+    /* LIST VIEW - Clean Horizontal Rows */
+    .list-view {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 1rem;
+    }
+
+    .list-view .member-card {
+        display: flex !important;
+        flex-direction: row !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+        padding: 0.75rem 1.5rem !important;
+        background-color: var(--bg-color);
+        border-left: 5px solid var(--primary-color);
+        border-top: none !important;
+        /* Removes top border set on grid cards */
+    }
+
+    /* Adjustments for children inside the list layout */
+    .list-view .member-card h3 {
+        flex: 1.5;
+        margin: 0;
+        text-align: left;
+    }
+
+    .list-view .member-card .membership-badge {
+        flex: 1;
+        margin: 0;
+        font-weight: 600;
+    }
+
+    .list-view .member-card .address {
+        flex: 2;
+        margin: 0;
+    }
+
+    .list-view .member-card .phone {
+        flex: 1.2;
+        margin: 0;
+    }
+
+    .list-view .member-card .website {
+        flex: 1;
+        margin: 0;
+        text-align: right;
+    }
+
+    /* Hide line dividers and taglines on desktop list view */
+    .list-view .member-card hr {
+        display: none;
+    }
+
+    /* ==========================================================================
+       4. Footer Layout - Two Columns
+       ========================================================================== */
+    .footer-container {
+        flex-direction: row !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+        text-align: left;
+    }
+
+    .footer-meta {
+        border-top: none;
+        padding-top: 0;
+        text-align: right;
+    }
+}
