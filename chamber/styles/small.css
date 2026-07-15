@@ -1,0 +1,29 @@
+.ccg-logo {
+  display: flex;
+  flex-direction: column;
+  /* Apila el icono y el texto */
+  align-items: center;
+  color: #0A2540;
+  /* Azul Profundo */
+  font-family: 'Roboto', sans-serif;
+  /* O tu fuente */
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.ccg-logo .fa-landmark {
+  font-size: 3rem;
+  color: #C69C6D;
+  /* Dorado Guayas para destacar el faro */
+  margin-bottom: -5px;
+  /* Superposición ligera */
+}
+
+.ccg-logo .river-wave {
+  width: 60px;
+  height: 6px;
+  background-color: #007BFF;
+  /* Azul Caribe para el río */
+  border-radius: 3px;
+  margin-top: 5px;
+}

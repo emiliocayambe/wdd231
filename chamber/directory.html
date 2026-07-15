@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Emilio Cayambe">
+  <meta name="description" content="Guayaquil Chamber of Commerce Directory">
+  <meta property="og:title" content="business directory of the Guayaquil Chamber of Commerce">
+  <meta property="og:description" content="official directory of companies registered with the Guayaquil Chamber of Commerce. Find businesses, services, and contact information in one place.">
+  <meta property="og:image" content="URL_A_TU_IMAGEN_EN_GITHUB">
+  <meta property="og:url" content="URL_DE_TU_PAGINA">
+  <script src="https://kit.fontawesome.com/d4ba15d917.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/small.css">
+
+
+  <title>Guayaquil Chamber of Commerce</title>
+</head>
+<body>
+  <header>
+    <div class="ccg-logo">
+      <i class="fas fa-landmark"></i> <!-- Icono base que parece un faro moderno -->
+      <div class="river-wave"></div> <!-- Línea de río hecha con CSS -->
+      <span>Guayaquil Chamber of Comercio</span>
+    </div>
+    <h1>Guayaquil Chamber of Commerce Directory</h1> 
+  </header> 
+  <main> 
+    
+    <section>
+      <h2>Search for Companies</h2>
+      <form id="searchForm">
+        <input type="text" id="searchInput" placeholder="Enter company name or keyword">
+        <button type="submit">Search</button>
+      </form>
+    </section>
+
+    <section id="resultsSection">
+      <h2>Search Results</h2>
+      <ul id="resultsList"></ul>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2024 Guayaquil Chamber of Commerce. All rights reserved.</p>  
+  </footer>
+  <script src="directory.js"></script>
+  
+</body>
+</html>
