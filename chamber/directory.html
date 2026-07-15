@@ -20,11 +20,11 @@
     rel="stylesheet">
 
   <!-- Social Media Meta Tags (Open Graph) -->
+  <meta property="fb:app_id" content="123456789012345" />
   <meta property="og:title" content="Member Directory - Guayaquil Chamber of Commerce">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://emiliocayambe.github.io/wdd231/chamber/directory.html">
-  <meta property="og:image"
-    content="https://raw.githubusercontent.com/emiliocayambe/wdd231/main/chamber/images/logo.jpg">
+  <meta property="og:image" content="https://emiliocayambe.github.io/wdd231/chamber/images/logo.jpg">
   <meta property="og:description"
     content="Explore and connect with the companies and businesses driving Guayaquil's economy.">
   <meta property="og:site_name" content="Guayaquil Chamber of Commerce">
@@ -38,6 +38,7 @@
 
   <!-- 3. Your desktop styles (loaded always, but managed internally by CSS @media) -->
   <link rel="stylesheet" href="styles/larger.css">
+  <script src="scripts/directory.js" defer></script>
 </head>
 
 <body>
@@ -46,7 +47,8 @@
     <div class="header-container">
       <img class="logo" src="images/logo.jpg" alt="Guayaquil Chamber of Commerce Logo">
       <div class="header-titles">
-        <h1>Guayaquil Chamber of Commerce</h1>
+        <!-- 1. Changed from h1 to a styled div or paragraph -->
+        <p class="header-title-text">Guayaquil Chamber of Commerce</p>
         <p class="tagline">Driving commerce since 1889</p>
       </div>
     </div>
@@ -69,7 +71,7 @@
 
   <main>
     <section class="directory-intro">
-      <h2>Member Directory</h2>
+     <h1>Member Directory</h1>
       <p>Support local commerce by exploring our network of associated businesses.</p>
 
       <div class="view-controls">
@@ -102,8 +104,6 @@
       </div>
     </div>
   </footer>
-
-  <script src="scripts/directory.js" defer></script>
 </body>
 
 </html>

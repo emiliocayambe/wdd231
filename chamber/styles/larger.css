@@ -1,9 +1,8 @@
 /* ==========================================================================
-   LARGE SCREENS / DESKTOP (>= 1024px)
+   LARGE SCREENS / DESKTOP (>= 1024px / 64rem)
    ========================================================================== */
 
-@media only screen and (min-width: 38rem) {
-
+@media only screen and (min-width: 64rem) {
 
     /* 1. Header Layout Adjustment */
     header {
@@ -12,7 +11,10 @@
         align-items: center;
         padding: 1rem 2rem;
         position: static;
-        /* Removes absolute positioning side effects from small.css */
+    }
+
+    .header-titles .header-title-text {
+        font-size: 1.6rem;
     }
 
     .header-container {
@@ -24,10 +26,6 @@
     .logo {
         width: 80px;
         height: 80px;
-    }
-
-    .header-titles h1 {
-        font-size: 1.6rem;
     }
 
     /* Hide Hamburger Menu Button on Desktop */

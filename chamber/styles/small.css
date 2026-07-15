@@ -2,319 +2,339 @@
    1. VARIABLES & ROOT STYLES
    ========================================================================== */
 :root {
-    --heading-font: 'Montserrat', sans-serif;
-    --body-font: 'Open Sans', sans-serif;
+  --heading-font: 'Montserrat', sans-serif;
+  --body-font: 'Open Sans', sans-serif;
 
-    /* Color Palette */
-    --primary-color: #0b2c56;     /* Deep Navy Blue */
-    --secondary-color: #bca272;   /* Elegant Gold/Bronze */
-    --accent-color: #1a4a80;      /* Lighter Navy for hover/links */
-    --text-color: #333333;        /* Dark Charcoal */
-    --bg-color: #ffffff;          /* Pure White */
-    --bg-light: #f8f9fa;          /* Very Light Grey */
-    --border-color: #e0e0e0;      
-    
-    --max-width: 1200px;
+  /* Color Palette */
+  --primary-color: #0b2c56;
+  /* Deep Navy Blue */
+  --secondary-color: #bca272;
+  /* Elegant Gold/Bronze */
+  --accent-color: #1a4a80;
+  /* Lighter Navy for hover/links */
+  --text-color: #333333;
+  /* Dark Charcoal */
+  --bg-color: #ffffff;
+  /* Pure White */
+  --bg-light: #f8f9fa;
+  /* Very Light Grey */
+  --border-color: #e0e0e0;
+
+  --max-width: 1200px;
 }
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    font-family: var(--body-font);
-    background-color: var(--bg-light);
-    color: var(--text-color);
-    line-height: 1.6;
-    overflow-x: hidden;
+  font-family: var(--body-font);
+  background-color: var(--bg-light);
+  color: var(--text-color);
+  line-height: 1.6;
+  overflow-x: hidden;
 }
 
 /* ==========================================================================
    2. HEADER & MOBILE NAVIGATION (Default Styles)
    ========================================================================== */
 header {
-    background-color: var(--primary-color);
-    color: var(--bg-color);
-    padding: 1rem;
-    position: relative;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  background-color: var(--primary-color);
+  color: var(--bg-color);
+  padding: 1rem;
+  position: relative;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .header-container {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    max-width: var(--max-width);
-    margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  max-width: var(--max-width);
+  margin: 0 auto;
 }
 
 /* LOGO FIX: Cuts the white corners and makes it circular */
 .logo {
-    width: 65px;
-    height: 65px;
-    border-radius: 50%; /* Makes the square JPG a perfect circle */
-    object-fit: cover;
-    border: 2px solid var(--secondary-color); /* Adds an elegant gold outline */
-    background-color: var(--bg-color);
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--secondary-color);
+  background-color: var(--bg-color);
 }
 
-.header-titles h1 {
-    font-family: var(--heading-font);
-    font-size: 1.2rem;
-    font-weight: 700;
-    line-height: 1.2;
+.header-titles .header-title-text {
+  font-family: var(--heading-font);
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--bg-color);
 }
 
 .tagline {
-    font-size: 0.85rem;
-    color: var(--secondary-color);
-    font-weight: 500;
-    margin-top: 2px;
+  font-size: 0.85rem;
+  color: var(--secondary-color);
+  font-weight: 500;
+  margin-top: 2px;
 }
 
 /* Hamburger Button Icon */
 #menu-button {
-    background: none;
-    border: none;
-    cursor: pointer;
-    display: block;
-    position: absolute;
-    right: 1.5rem;
-    top: 1.5rem;
-    width: 30px;
-    height: 25px;
-    z-index: 100;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: block;
+  position: absolute;
+  right: 1.5rem;
+  top: 1.5rem;
+  width: 30px;
+  height: 25px;
+  z-index: 100;
 }
 
 #menu-button span {
-    background-color: var(--bg-color);
-    display: block;
-    height: 3px;
-    margin: 5px 0;
-    transition: 0.3s ease-in-out;
-    width: 100%;
+  background-color: var(--bg-color);
+  display: block;
+  height: 3px;
+  margin: 5px 0;
+  transition: 0.3s ease-in-out;
+  width: 100%;
 }
 
 /* Hamburger Animation */
 #menu-button.open span:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
+  transform: translateY(8px) rotate(45deg);
 }
+
 #menu-button.open span:nth-child(2) {
-    opacity: 0;
+  opacity: 0;
 }
+
 #menu-button.open span:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
+  transform: translateY(-8px) rotate(-45deg);
 }
 
 /* Mobile Nav Drawer */
 #primary-nav {
-    display: none; /* Hidden on mobile by default */
-    width: 100%;
-    margin-top: 1rem;
+  display: none;
+  width: 100%;
+  margin-top: 1rem;
 }
 
 #primary-nav.open {
-    display: block;
+  display: block;
 }
 
 .nav-menu {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    padding: 0;
-    margin: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
 }
 
 .nav-menu li a {
-    color: var(--bg-color);
-    text-decoration: none;
-    padding: 0.8rem 1rem;
-    display: block;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    font-weight: 500;
+  color: var(--bg-color);
+  text-decoration: none;
+  padding: 0.8rem 1rem;
+  display: block;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  font-weight: 500;
 }
 
 .nav-menu li a:hover,
 .nav-menu li a.active {
-    background-color: var(--secondary-color);
-    color: var(--primary-color);
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
 }
 
 /* ==========================================================================
    3. MAIN CONTENT (Mobile First)
    ========================================================================== */
 main {
-    padding: 1.5rem 1rem;
-    max-width: var(--max-width);
-    margin: 0 auto;
-    min-height: 70vh;
+  padding: 1.5rem 1rem;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  min-height: 70vh;
 }
 
 .directory-intro {
-    text-align: center;
-    margin-bottom: 1.5rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
 }
 
-.directory-intro h2 {
-    font-family: var(--heading-font);
-    color: var(--primary-color);
-    margin-bottom: 0.5rem;
+.directory-intro h1 {
+  font-family: var(--heading-font);
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+  font-size: 1.8rem;
 }
 
 .view-controls {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
 }
 
 .view-controls button {
-    font-family: var(--heading-font);
-    background-color: var(--bg-color);
-    color: var(--primary-color);
-    border: 2px solid var(--primary-color);
-    padding: 0.5rem 1rem;
-    font-weight: 600;
-    cursor: pointer;
-    border-radius: 4px;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    transition: all 0.3s;
+  font-family: var(--heading-font);
+  background-color: var(--bg-color);
+  color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.3s;
 }
 
 .view-controls button:hover,
 .view-controls button.active {
-    background-color: var(--primary-color);
-    color: var(--bg-color);
+  background-color: var(--primary-color);
+  color: var(--bg-color);
 }
 
 /* GRID VIEW (Mobile - 1 Column) */
 .grid-view {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
 }
 
 .grid-view .member-card {
-    background-color: var(--bg-color);
-    border: 1px solid var(--border-color);
-    border-radius: 8px;
-    padding: 1.5rem;
-    text-align: center;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  background-color: var(--bg-color);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
 }
 
 .grid-view .member-card.gold-member {
-    border-top: 4px solid var(--secondary-color);
+  border-top: 4px solid var(--secondary-color);
 }
 
 .grid-view .member-card.silver-member {
-    border-top: 4px solid #a6a6a6;
+  border-top: 4px solid #a6a6a6;
 }
 
 .grid-view .member-card img {
-    max-width: 120px;
-    height: auto;
-    margin-bottom: 1rem;
+  max-width: 120px;
+  height: auto;
+  margin-bottom: 1rem;
 }
 
 .grid-view .member-card h3 {
-    font-family: var(--heading-font);
-    color: var(--primary-color);
-    margin-bottom: 0.5rem;
+  font-family: var(--heading-font);
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
 }
 
 .grid-view .member-card .tagline {
-    font-style: italic;
-    color: #666;
-    margin-bottom: 1rem;
+  font-style: italic;
+  color: #666;
+  margin-bottom: 1rem;
 }
 
 .grid-view .member-card p {
-    font-size: 0.9rem;
-    margin: 0.3rem 0;
+  font-size: 0.9rem;
+  margin: 0.3rem 0;
 }
 
 .grid-view .member-card a {
-    color: var(--accent-color);
-    font-weight: 600;
-    text-decoration: none;
+  color: var(--accent-color);
+  font-weight: 600;
+  text-decoration: none;
 }
 
+.grid-view .member-card hr {
+  border: 0;
+  border-top: 1px solid var(--border-color);
+  margin: 1rem 0;
+  height: 0;
+}
+
+/* Membership Badges with Safe WCAG Contrast */
 .membership-badge {
-    display: inline-block;
-    padding: 0.2rem 0.6rem;
-    border-radius: 20px;
-    font-size: 0.75rem;
-    font-weight: bold;
-    text-transform: uppercase;
+  display: inline-block;
+  padding: 0.2rem 0.6rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 .membership-badge.gold-member {
-    background-color: #fcf8e3;
-    color: #8a6d3b;
+  background-color: #fcf8e3;
+  color: #8a6d3b;
 }
 
 .membership-badge.silver-member {
-    background-color: #f5f5f5;
-    color: #555555;
+  background-color: #e0e0e0;
+  /* Clean light grey background */
+  color: #333333;
+  /* Dark Charcoal text (Perfect 4.5:1+ Contrast ratio) */
 }
 
 .membership-badge.regular-member {
-    background-color: #d9edf7;
-    color: #31708f;
+  background-color: #d9edf7;
+  color: #31708f;
 }
 
 /* LIST VIEW (Mobile) */
 .list-view {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .list-view .member-card {
-    background-color: var(--bg-color);
-    border-left: 5px solid var(--primary-color);
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    gap: 0.3rem;
+  background-color: var(--bg-color);
+  border-left: 5px solid var(--primary-color);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
 }
 
 .list-view .member-card img,
 .list-view .member-card .tagline,
 .list-view .member-card hr {
-    display: none;
+  display: none;
 }
 
 /* ==========================================================================
    4. FOOTER (Default Styles)
    ========================================================================== */
 footer {
-    background-color: var(--primary-color);
-    color: var(--bg-color);
-    padding: 2rem 1rem;
-    text-align: center;
-    font-size: 0.9rem;
-    margin-top: 3rem;
+  background-color: var(--primary-color);
+  color: var(--bg-color);
+  padding: 2rem 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+  margin-top: 3rem;
 }
 
 .footer-container {
-    max-width: var(--max-width);
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
 .footer-info h3 {
-    color: var(--secondary-color);
+  color: var(--secondary-color);
 }
 
 .footer-meta {
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    padding-top: 1.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 1.5rem;
 }
