@@ -75,9 +75,7 @@
     .nav-menu li a:hover,
     .nav-menu li a.active {
         background-color: var(--secondary-color) !important;
-        /* Elegant gold based on logo */
-        color: var(--primary-color) !important;
-        /* High contrast navy text */
+        color: #000000 !important;
     }
 
     /* ==========================================================================

@@ -56,7 +56,7 @@ header {
   margin: 0 auto;
 }
 
-/* LOGO FIX: Cuts the white corners and makes it circular */
+
 .logo {
   width: 65px;
   height: 65px;
@@ -76,7 +76,7 @@ header {
 
 .tagline {
   font-size: 0.85rem;
-  color: var(--secondary-color);
+  color: #e6ce9f;
   font-weight: 500;
   margin-top: 2px;
 }
@@ -149,8 +149,10 @@ header {
 
 .nav-menu li a:hover,
 .nav-menu li a.active {
-  background-color: var(--primary-color) !important;
-  color: var(--bg-color) !important;
+  background-color: var(--secondary-color);
+
+  color: #000000 !important;
+
 }
 
 /* ==========================================================================
@@ -200,7 +202,8 @@ main {
 .view-controls button:hover,
 .view-controls button.active {
   background-color: var(--primary-color);
-  color: var(--bg-color);
+  color: var(--bg-color) !important;
+
 }
 
 /* GRID VIEW (Mobile - 1 Column) */
@@ -241,7 +244,7 @@ main {
 
 .grid-view .member-card .tagline {
   font-style: italic;
-  color: #666;
+  color: #333333;
   margin-bottom: 1rem;
 }
 
@@ -275,20 +278,19 @@ main {
 
 .membership-badge.gold-member {
   background-color: #fcf8e3;
-  color: #8a6d3b;
+  color: #57411c;
 }
+
 
 .membership-badge.silver-member {
   background-color: #e0e0e0;
-  /* Clean light grey background */
-  color: #333333;
-  /* Dark Charcoal text (Perfect 4.5:1+ Contrast ratio) */
+  color: #222222;
 }
 
 
 .membership-badge.regular-member {
   background-color: #d9edf7;
-  color: #31708f;
+  color: #123c52;
 }
 
 /* LIST VIEW (Mobile) */
