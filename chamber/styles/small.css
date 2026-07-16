@@ -1,25 +1,13 @@
-/* ==========================================================================
-   1. VARIABLES & ROOT STYLES
-   ========================================================================== */
 :root {
   --heading-font: 'Montserrat', sans-serif;
   --body-font: 'Open Sans', sans-serif;
-
-  /* Color Palette */
   --primary-color: #0b2c56;
-  /* Deep Navy Blue */
   --secondary-color: #bca272;
-  /* Elegant Gold/Bronze */
   --accent-color: #1a4a80;
-  /* Lighter Navy for hover/links */
   --text-color: #333333;
-  /* Dark Charcoal */
   --bg-color: #ffffff;
-  /* Pure White */
   --bg-light: #f8f9fa;
-  /* Very Light Grey */
   --border-color: #e0e0e0;
-
   --max-width: 1200px;
 }
 
@@ -37,9 +25,6 @@ body {
   overflow-x: hidden;
 }
 
-/* ==========================================================================
-   2. HEADER & MOBILE NAVIGATION (Default Styles)
-   ========================================================================== */
 header {
   background-color: var(--primary-color);
   color: var(--bg-color);
@@ -55,7 +40,6 @@ header {
   max-width: var(--max-width);
   margin: 0 auto;
 }
-
 
 .logo {
   width: 65px;
@@ -76,14 +60,13 @@ header {
 
 .tagline {
   font-size: 0.85rem;
-  color: #e6ce9f;
+  color: #f1e2c3;
   font-weight: 500;
   margin-top: 2px;
 }
 
-/* Hamburger Button Icon */
 #menu-button {
-  background: none;
+  background-color: var(--primary-color);
   border: none;
   cursor: pointer;
   display: block;
@@ -104,7 +87,6 @@ header {
   width: 100%;
 }
 
-/* Hamburger Animation */
 #menu-button.open span:nth-child(1) {
   transform: translateY(8px) rotate(45deg);
 }
@@ -116,7 +98,6 @@ header {
 #menu-button.open span:nth-child(3) {
   transform: translateY(-8px) rotate(-45deg);
 }
-
 
 #primary-nav {
   display: none;
@@ -151,15 +132,17 @@ header {
 
 .nav-menu li a:hover,
 .nav-menu li a.active {
-  background-color: var(--secondary-color);
-
+  background-color: var(--secondary-color) !important;
   color: #000000 !important;
-
 }
 
-/* ==========================================================================
-   3. MAIN CONTENT (Mobile First)
-   ========================================================================== */
+header a.active,
+nav a.active,
+.nav-menu li a.active {
+  background-color: var(--secondary-color) !important;
+  color: #000000 !important;
+}
+
 main {
   padding: 1.5rem 1rem;
   max-width: var(--max-width);
@@ -205,10 +188,8 @@ main {
 .view-controls button.active {
   background-color: var(--primary-color);
   color: var(--bg-color) !important;
-
 }
 
-/* GRID VIEW (Mobile - 1 Column) */
 .grid-view {
   display: grid;
   grid-template-columns: 1fr;
@@ -246,7 +227,7 @@ main {
 
 .grid-view .member-card .tagline {
   font-style: italic;
-  color: #333333;
+  color: #222222;
   margin-bottom: 1rem;
 }
 
@@ -268,7 +249,6 @@ main {
   height: 0;
 }
 
-/* Membership Badges with Safe WCAG Contrast */
 .membership-badge {
   display: inline-block;
   padding: 0.2rem 0.6rem;
@@ -283,19 +263,16 @@ main {
   color: #57411c;
 }
 
-
 .membership-badge.silver-member {
   background-color: #e0e0e0;
   color: #222222;
 }
-
 
 .membership-badge.regular-member {
   background-color: #d9edf7;
   color: #123c52;
 }
 
-/* LIST VIEW (Mobile) */
 .list-view {
   display: flex;
   flex-direction: column;
@@ -317,9 +294,6 @@ main {
   display: none;
 }
 
-/* ==========================================================================
-   4. FOOTER (Default Styles)
-   ========================================================================== */
 footer {
   background-color: var(--primary-color);
   color: var(--bg-color);
