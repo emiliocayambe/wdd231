@@ -319,3 +319,21 @@ footer {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   padding-top: 1.5rem;
 }
+
+.footer-social {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 1rem 0;
+}
+
+.footer-social a {
+  color: var(--secondary-color);
+  font-size: 1.5rem;
+  transition: transform 0.2s, color 0.2s;
+}
+
+.footer-social a:hover {
+  color: var(--bg-color);
+  transform: scale(1.1);
+}
