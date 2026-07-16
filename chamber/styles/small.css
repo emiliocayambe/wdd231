@@ -92,7 +92,7 @@ header {
   top: 1.5rem;
   width: 30px;
   height: 25px;
-  z-index: 100;
+  z-index: 150;
 }
 
 #menu-button span {
@@ -117,13 +117,15 @@ header {
   transform: translateY(-8px) rotate(-45deg);
 }
 
-/* Mobile Nav Drawer */
+
 #primary-nav {
   display: none;
   width: 100%;
   margin-top: 1rem;
-  background-color: var(--primary-color);
-  /* ¡Esto fuerza el fondo azul marino real! */
+  background-color: var(--primary-color) !important;
+  position: relative;
+  z-index: 10;
+  clear: both;
 }
 
 #primary-nav.open {
