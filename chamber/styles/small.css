@@ -25,7 +25,7 @@ body {
   overflow-x: hidden;
 }
 
-
+/* --- HEADER & NAV (Directorio y Home) --- */
 header {
   background-color: var(--primary-color);
   color: var(--bg-color);
@@ -124,6 +124,7 @@ header {
   color: #000000 !important;
 }
 
+/* --- DIRECTORIO (Estilos Originales) --- */
 main {
   padding: 1.5rem 1rem;
   max-width: var(--max-width);
@@ -275,6 +276,7 @@ main {
   display: none;
 }
 
+/* --- FOOTER --- */
 footer {
   background-color: var(--primary-color);
   color: var(--bg-color);
@@ -319,6 +321,7 @@ footer {
   transform: scale(1.1);
 }
 
+/* --- HOME PAGE (Aislado) --- */
 .hero-container {
   position: relative;
   width: 100%;
@@ -420,36 +423,6 @@ footer {
   margin-bottom: 5px;
 }
 
-#spotlights-container .spotlight-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1.5rem;
-  margin-top: 1rem;
-}
-
-
-.home-member-card {
-  background-color: var(--bg-color);
-  border: 1px solid var(--border-color);
-  border-radius: 8px;
-  padding: 1.5rem;
-  text-align: center;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-}
-
-
-.home-member-card img {
-  max-width: 100px;
-  height: auto;
-  margin-bottom: 1rem;
-}
-
-.home-member-card h3 {
-  font-family: var(--heading-font);
-  color: var(--primary-color);
-  margin-bottom: 0.5rem;
-}
-
 .event-list {
   list-style: none;
   padding: 0;
@@ -464,10 +437,6 @@ footer {
   border-bottom: 1px solid var(--border-color);
 }
 
-.event-list li:last-child {
-  border-bottom: none;
-}
-
 .event-date {
   background-color: var(--secondary-color);
   color: #000;
@@ -480,12 +449,17 @@ footer {
   text-align: center;
 }
 
+#spotlights-container .spotlight-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
 
 .home-member-card {
   background-color: var(--bg-color);
   border: 1px solid var(--border-color);
   border-top: 4px solid var(--secondary-color);
-  /* Toque de color corporativo */
   border-radius: 8px;
   padding: 1.5rem;
   text-align: center;
@@ -495,11 +469,18 @@ footer {
 .home-member-card h3 {
   color: var(--primary-color);
   margin-bottom: 0.5rem;
+  font-family: var(--heading-font);
+}
+
+.home-member-card .tagline {
+  font-style: italic;
+  color: #222222;
+  margin-bottom: 1rem;
+  display: block;
 }
 
 .home-member-card .card-info {
   text-align: left;
-
   font-size: 0.85rem;
   color: var(--text-color);
 }
@@ -519,11 +500,4 @@ footer {
   color: var(--accent-color);
   font-weight: 600;
   text-decoration: none;
-}
-
-.home-member-card .tagline {
-  font-style: italic;
-  color: #222222;
-  margin-bottom: 1rem;
-  display: block;
 }
