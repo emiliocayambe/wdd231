@@ -1,5 +1,6 @@
 @media only screen and (min-width: 64rem) {
 
+    /* --- Header & Navigation Desktop --- */
     header {
         display: flex !important;
         justify-content: space-between;
@@ -42,10 +43,6 @@
         padding: 0;
     }
 
-    .nav-menu li {
-        display: block;
-    }
-
     .nav-menu li a {
         color: var(--bg-color);
         text-decoration: none;
@@ -64,6 +61,7 @@
         color: #000000 !important;
     }
 
+    /* --- Directory Styles (Preservados) --- */
     main {
         padding: 2rem;
     }
@@ -123,6 +121,7 @@
         display: none;
     }
 
+    /* --- Footer Desktop --- */
     .footer-container {
         flex-direction: row !important;
         justify-content: space-between !important;
@@ -134,5 +133,32 @@
         border-top: none;
         padding-top: 0;
         text-align: right;
+    }
+
+    /* --- Home Page Layout (Integrado) --- */
+    .hero-container {
+        max-width: var(--max-width);
+        margin: 0 auto 2rem auto;
+    }
+
+    .home-grid {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        /* Clima 2 partes, Eventos 1 parte */
+        gap: 1.5rem;
+    }
+
+    .spotlight-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr) !important;
+        /* Asegura 3 columnas */
+        gap: 1.5rem;
+    }
+
+    /* Asegurar que las tarjetas de la Home no cambien el directorio */
+    #spotlights-container .member-card {
+        display: flex !important;
+        flex-direction: column !important;
+        height: 100%;
     }
 }

@@ -25,6 +25,7 @@ body {
   overflow-x: hidden;
 }
 
+/* --- TU CÓDIGO ORIGINAL DE CABECERA Y DIRECTORIO --- */
 header {
   background-color: var(--primary-color);
   color: var(--bg-color);
@@ -54,7 +55,6 @@ header {
   font-family: var(--heading-font);
   font-size: 1.2rem;
   font-weight: 700;
-  line-height: 1.2;
   color: var(--bg-color);
 }
 
@@ -85,18 +85,6 @@ header {
   margin: 5px 0;
   transition: 0.3s ease-in-out;
   width: 100%;
-}
-
-#menu-button.open span:nth-child(1) {
-  transform: translateY(8px) rotate(45deg);
-}
-
-#menu-button.open span:nth-child(2) {
-  opacity: 0;
-}
-
-#menu-button.open span:nth-child(3) {
-  transform: translateY(-8px) rotate(-45deg);
 }
 
 #primary-nav {
@@ -131,13 +119,6 @@ header {
 }
 
 .nav-menu li a:hover,
-.nav-menu li a.active {
-  background-color: var(--secondary-color) !important;
-  color: #000000 !important;
-}
-
-header a.active,
-nav a.active,
 .nav-menu li a.active {
   background-color: var(--secondary-color) !important;
   color: #000000 !important;
@@ -336,4 +317,219 @@ footer {
 .footer-social a:hover {
   color: var(--bg-color);
   transform: scale(1.1);
+}
+
+/* --- ESTILOS EXCLUSIVOS PARA HOME (No tocan Directory) --- */
+.hero-container {
+  position: relative;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.hero-container img {
+  width: 100%;
+  display: block;
+  height: auto;
+}
+
+.hero-label {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  background-color: rgba(11, 44, 86, 0.85);
+  padding: 1.5rem;
+  color: var(--bg-color);
+  border-radius: 4px;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: var(--secondary-color);
+  color: #000;
+  padding: 0.8rem 1.5rem;
+  text-decoration: none;
+  font-weight: 700;
+  margin-top: 1rem;
+  border-radius: 4px;
+}
+
+.home-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.card {
+  background: var(--bg-color);
+  padding: 1.5rem;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.card h2 {
+  font-family: var(--heading-font);
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+  border-bottom: 2px solid var(--secondary-color);
+  padding-bottom: 0.5rem;
+}
+
+.current-weather {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}
+
+#weather-icon {
+  width: 60px;
+  height: 60px;
+}
+
+.climate-desc {
+  font-size: 0.9rem;
+  font-style: italic;
+  margin-bottom: 1rem;
+  color: #555;
+  border-left: 3px solid var(--secondary-color);
+  padding-left: 10px;
+}
+
+.forecast-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.forecast-box {
+  border: 1px solid var(--border-color);
+  border-bottom: 4px solid var(--secondary-color);
+  padding: 10px;
+  text-align: center;
+  border-radius: 4px;
+  background: #fff;
+}
+
+.forecast-box strong {
+  display: block;
+  color: var(--primary-color);
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+#spotlights-container .spotlight-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+/* Estilos exclusivos para las tarjetas de la HOME - No tocan al Directorio */
+.home-member-card {
+  background-color: var(--bg-color);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* Ajustes específicos para que las tarjetas de la Home se vean bien */
+.home-member-card img {
+  max-width: 100px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.home-member-card h3 {
+  font-family: var(--heading-font);
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+/* --- Estilos Exclusivos para la Lista de Eventos (Home) --- */
+.event-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.event-list li {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.8rem 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.event-list li:last-child {
+  border-bottom: none;
+}
+
+.event-date {
+  background-color: var(--secondary-color);
+  color: #000;
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  min-width: 65px;
+  text-align: center;
+}
+
+/* --- Estilos unificados para las tarjetas de la HOME --- */
+.home-member-card {
+  background-color: var(--bg-color);
+  border: 1px solid var(--border-color);
+  border-top: 4px solid var(--secondary-color);
+  /* Toque de color corporativo */
+  border-radius: 8px;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.home-member-card h3 {
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+.home-member-card .card-info {
+  text-align: left;
+  /* Alineado a la izquierda para mejor lectura */
+  font-size: 0.85rem;
+  color: var(--text-color);
+}
+
+.home-member-card .card-info p {
+  margin: 0.5rem 0;
+}
+
+.home-member-card i {
+  color: var(--secondary-color);
+  /* Iconos con color de marca */
+  margin-right: 8px;
+  width: 15px;
+  /* Alineación constante */
+  text-align: center;
+}
+
+.home-member-card a {
+  color: var(--accent-color);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* Asegurar que el tagline de la Home sea idéntico al del Directorio */
+.home-member-card .tagline {
+  font-style: italic;
+  color: #222222;
+  margin-bottom: 1rem;
+  display: block;
+  /* Asegura que mantenga el espaciado correcto */
 }

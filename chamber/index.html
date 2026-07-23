@@ -41,6 +41,7 @@
   <!-- 3. Your desktop styles (loaded always, but managed internally by CSS @media) -->
   <link rel="stylesheet" href="styles/larger.css">
   <script src="scripts/directory.js" defer></script>
+  <script src="scripts/main.js" defer></script>
 </head>
 
 <body>
@@ -62,31 +63,62 @@
 
     <nav id="primary-nav">
       <ul class="nav-menu">
-        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html" class="active">Home</a></li>
         <li><a href="#">Discover</a></li>
-        <li><a href="directory.html" class="active">Directory</a></li>
+        <li><a href="directory.html">Directory</a></li>
         <li><a href="#">Join</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <section class="directory-intro">
-      <h1>Member Directory</h1>
-      <p>Support local commerce by exploring our network of associated businesses.</p>
-
-      <div class="view-controls">
-        <button id="grid-view-btn" class="active" aria-label="Grid View">
-          <span class="icon">⊞</span> Grid
-        </button>
-        <button id="list-view-btn" aria-label="List View">
-          <span class="icon">≡</span> List
-        </button>
+    <section class="hero-container">
+      <picture>
+        <img src="images/guayaquil-hero.webp" alt="Guayaquil Chamber of Commerce" width="1200" height="600">
+      </picture>
+      <div class="hero-label">
+        <h1>Guayaquil Chamber of Commerce</h1>
+        <a href="join.html" class="cta-button">Join the Chamber</a>
       </div>
     </section>
 
-    <section id="members-container" class="grid-view">
-      <!-- Members will be injected here via JavaScript -->
+    <div class="home-grid">
+      <section class="card weather weather-wide">
+        <h2>Weather in Guayaquil</h2>
+        <div id="weather-info">
+          <p class="climate-desc">Guayaquil features a tropical savanna climate, characterized by hot and humid weather
+            year-round.</p>
+
+          <div class="current-weather">
+            <img id="weather-icon" src="" alt="weather icon">
+            <div>
+              <h3 id="temp">--°C</h3>
+              <p id="desc">Loading...</p>
+            </div>
+          </div>
+
+          <div id="forecast-grid" class="forecast-grid">
+            <!-- JS inyecta los recuadros aquí -->
+          </div>
+        </div>
+      </section>
+      <section class="card events">
+        <h2>Current Events</h2>
+        <ul id="event-list" class="event-list">
+          <li><span class="event-date">July 25</span> Business Round Table</li>
+          <li><span class="event-date">July 30</span> Import Seminar</li>
+          <li><span class="event-date">Aug 05</span> Tech Innovation Expo</li>
+          <li><span class="event-date">Aug 12</span> Local Chamber Meetup</li>
+        </ul>
+      </section>
+    </div>
+
+    <!-- Removed .card class here to avoid style conflicts -->
+    <section id="spotlights-container" class="spotlights">
+      <h2>Featured Companies</h2>
+      <div class="spotlight-grid">
+        <!-- JS will inject the cards here -->
+      </div>
     </section>
   </main>
 
