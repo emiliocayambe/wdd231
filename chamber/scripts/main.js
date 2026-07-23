@@ -63,7 +63,7 @@ function displaySpotlights(members) {
 
         members.forEach(member => {
             let card = document.createElement('section');
-            card.className = 'home-member-card'; // Clase aislada
+            card.className = 'home-member-card'; 
 
             card.innerHTML = `
                 <img src="images/${member.image}" alt="${member.name} logo" width="100">

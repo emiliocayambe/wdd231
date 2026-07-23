@@ -61,7 +61,7 @@
         color: #000000 !important;
     }
 
-    /* --- Directory Styles (Preservados) --- */
+    /* --- Directory Styles  --- */
     main {
         padding: 2rem;
     }
@@ -135,7 +135,7 @@
         text-align: right;
     }
 
-    /* --- Home Page Layout (Integrado) --- */
+    /* --- Home Page Layout  --- */
     .hero-container {
         max-width: var(--max-width);
         margin: 0 auto 2rem auto;
@@ -144,18 +144,18 @@
     .home-grid {
         display: grid;
         grid-template-columns: 2fr 1fr;
-        /* Clima 2 partes, Eventos 1 parte */
+        /* forecast 2 parts   */
         gap: 1.5rem;
     }
 
     .spotlight-grid {
         display: grid;
         grid-template-columns: repeat(3, 1fr) !important;
-        /* Asegura 3 columnas */
+        /* make sure 3 columns */
         gap: 1.5rem;
     }
 
-    /* Asegurar que las tarjetas de la Home no cambien el directorio */
+    /* home cards no change */
     #spotlights-container .member-card {
         display: flex !important;
         flex-direction: column !important;
