@@ -341,9 +341,6 @@ footer {
   position: absolute;
   bottom: 1rem;
   left: 1rem;
-  /* Fallback sólido para navegadores viejos */
-  background-color: #0b2c56;
-  /* Fondo más oscuro y opaco para garantizar contraste sobre cualquier imagen */
   background-color: rgba(11, 44, 86, 0.9);
   padding: 1.5rem;
   color: var(--bg-color);
