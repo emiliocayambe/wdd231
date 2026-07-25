@@ -161,4 +161,20 @@
         flex-direction: column !important;
         height: 100%;
     }
+
+    /* join styles */
+
+    .join-wrapper {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .join-form {
+        flex: 2;
+    }
+
+    .join-cards-container {
+        flex: 1;
+    }
+
 }

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Contact - Guayaquil Chamber of Commerce</title>
+    <meta name="description"
+        content="Join the Guayaquil Chamber of Commerce and become part of the community driving economic growth in Guayaquil.">
+    <meta name="author" content="Emilio Cayambe">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.png" type="image/png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        crossorigin="anonymous">
+
+    <!-- Social Media Meta Tags (Open Graph) -->
+    <meta property="fb:app_id" content="123456789012345">
+    <meta property="og:title" content="Member Directory - Guayaquil Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://emiliocayambe.github.io/wdd231/chamber/directory.html">
+    <meta property="og:image" content="https://emiliocayambe.github.io/wdd231/chamber/images/logo.jpg">
+    <meta property="og:description"
+        content="Explore and connect with the companies and businesses driving Guayaquil's economy.">
+    <meta property="og:site_name" content="Guayaquil Chamber of Commerce">
+
+    <!-- CSS Links -->
+    <!-- 1. Normalize directly from CDN to avoid 404 path issues -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <!-- 2. Your base mobile styles (always loaded) -->
+    <link rel="stylesheet" href="styles/small.css">
+    <!-- 3. Your thank you page styles -->
+    <link rel="stylesheet" href="styles/thankyou.css">
+
+    <!-- 3. Your desktop styles (loaded always, but managed internally by CSS @media) -->
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/main.js" defer></script>
+
+</head>
+
+<body>
+
+    <header>
+        <div class="header-container">
+            <img class="logo" src="images/logo.jpg" alt="Guayaquil Chamber of Commerce Logo">
+            <div class="header-titles">
+                <p class="header-title-text">Guayaquil Chamber of Commerce</p>
+                <p class="tagline">Driving commerce since 1889</p>
+            </div>
+        </div>
+
+        <button id="menu-button" aria-label="Toggle navigation menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav id="primary-nav">
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html" class="active">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="thankyou-main">
+        <h1>Thank You!</h1>
+        <p>We have received your application. Here is the information you submitted:</p>
+
+        <div class="thankyou-details">
+            <p><strong>Name:</strong> <span id="first-display"></span> <span id="last-display"></span></p>
+            <p><strong>Email:</strong> <span id="email-display"></span></p>
+            <p><strong>Phone:</strong> <span id="phone-display"></span></p>
+            <p><strong>Organization:</strong> <span id="org-display"></span></p>
+            <p><strong>Submission Date:</strong> <span id="date-display"></span></p>
+        </div>
+
+        <a href="index.html" class="back-link">Return to Home</a>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-info">
+                <h2>Guayaquil Chamber of Commerce</h2>
+                <p>Av. Francisco de Orellana and Miguel H. Alcívar</p>
+                <p>Guayaquil, Ecuador 🇪🇨</p>
+                <p>info@lacamaradeecuador.org | +593 4-259-6100</p>
+            </div>
+
+            <!-- social media icons -->
+            <div class="footer-social">
+                <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://twitter.com" target="_blank" aria-label="Twitter / X">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+
+            <div class="footer-meta">
+                <p>&copy; <span id="current-year"></span> Emilio Cayambe</p>
+                <p>WDD 231 | Class Project</p>
+                <p class="last-modified">Last modified: <span id="last-modified-date"></span></p>
+            </div>
+        </div>
+    </footer>
+    <script type="module" src="scripts/thankyou.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,167 @@
+/* join.css - Complete Styles for Membership Page */
+
+/* 1. Layout Base */
+#join-main-content {
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.join-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* 2. Form Styling */
+.join-fieldset {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.join-fieldset legend {
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+.join-fieldset label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 15px;
+    font-weight: 500;
+    flex-wrap: wrap;
+}
+
+.join-fieldset input,
+.join-fieldset select,
+.join-fieldset textarea {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.join-submit-btn {
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 1rem;
+    width: 100%;
+}
+
+.join-submit-btn:hover {
+    background-color: #004494;
+}
+
+/* 3. Membership Cards Styling */
+.join-cards-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.join-card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    background: #fff;
+    border-top: 6px solid #ccc;
+    animation: join-appear 0.8s ease-out forwards;
+    opacity: 0;
+}
+
+/* Card Colors */
+#join-card-np {
+    border-top-color: #6c757d;
+}
+
+#join-card-bronze {
+    border-top-color: #cd7f32;
+}
+
+#join-card-silver {
+    border-top-color: #adb5bd;
+}
+
+#join-card-gold {
+    border-top-color: #ffc107;
+}
+
+.join-card-summary {
+    font-size: 0.9rem;
+    color: #666;
+    margin: 10px 0;
+}
+
+.join-modal-trigger {
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 100%;
+}
+
+.join-modal-trigger:hover {
+    background-color: #004494;
+    transform: scale(1.02);
+}
+
+/* 4. Modal Styling */
+.join-modal {
+    margin: auto;
+    border: none;
+    border-radius: 12px;
+    padding: 2rem;
+    max-width: 400px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+.join-modal::backdrop {
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(3px);
+}
+
+.join-modal ul {
+    margin: 1rem 0;
+    padding-left: 1.5rem;
+}
+
+.join-modal li {
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
+}
+
+.join-close-modal {
+    width: 100%;
+    padding: 10px;
+    background: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* 5. Animation */
+@keyframes join-appear {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

@@ -1,0 +1,29 @@
+#thankyou-main {
+    padding: 40px;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.thankyou-details {
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: left;
+    margin: 20px 0;
+    border-left: 5px solid #0056b3;
+}
+
+.thankyou-details p {
+    margin: 10px 0;
+}
+
+.back-link {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #0056b3;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
