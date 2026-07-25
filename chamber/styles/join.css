@@ -97,8 +97,9 @@
 
 .join-card-summary {
     font-size: 0.9rem;
-    color: #666;
+    color: #333333;
     margin: 10px 0;
+    line-height: 1.5;
 }
 
 .join-modal-trigger {
