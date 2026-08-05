@@ -1,0 +1,184 @@
+    :root {
+        --heading-font: 'Montserrat', sans-serif;
+        --body-font: 'Open Sans', sans-serif;
+
+        /* Color Palette */
+        --primary-color: #0b2c56;
+        --secondary-color: #0d6e63;
+        --accent-color: #bca272;
+        --text-color: #222222;
+        --bg-color: #f8f9fa;
+        --white: #ffffff;
+        --border-color: #e0e0e0;
+    }
+
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        font-family: var(--body-font);
+        background-color: var(--bg-color);
+        color: var(--text-color);
+        line-height: 1.6;
+        padding: 0;
+    }
+
+    header {
+        background-color: var(--primary-color);
+        color: var(--white);
+        padding: 2rem 1rem;
+        text-align: center;
+    }
+
+    header h1 {
+        font-family: var(--heading-font);
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    header h2 {
+        font-family: var(--body-font);
+        font-size: 1.1rem;
+        color: #f1e2c3;
+        font-weight: 600;
+    }
+
+    main {
+        max-width: 900px;
+        margin: 2rem auto;
+        padding: 0 1rem;
+    }
+
+    .plan-section {
+        background-color: var(--white);
+        border: 1px solid var(--border-color);
+        border-left: 5px solid var(--secondary-color);
+        border-radius: 6px;
+        padding: 1.5rem;
+        margin-bottom: 2rem;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    }
+
+    .plan-section h2 {
+        font-family: var(--heading-font);
+        color: var(--primary-color);
+        margin-bottom: 1rem;
+        border-bottom: 2px solid var(--accent-color);
+        padding-bottom: 0.3rem;
+    }
+
+    .plan-section ul {
+        padding-left: 1.5rem;
+    }
+
+    .plan-section li {
+        margin-bottom: 0.8rem;
+    }
+
+    /* Color Scheme Section */
+    .color-palette {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+
+    .color-box {
+        flex: 1 1 150px;
+        padding: 1rem;
+        border-radius: 4px;
+        text-align: center;
+        color: var(--white);
+    }
+
+    .color-box.primary {
+        background-color: var(--primary-color);
+        /* Navy #0b2c56 -> Contrast 13.9:1 (AAA) */
+    }
+
+    .color-box.secondary {
+        background-color: #094d45;
+        /* Dark Teal -> Contrast 8.4:1 (AAA) */
+    }
+
+    .color-box.accent {
+        background-color: var(--accent-color);
+        color: #000000 !important;
+        /* Pure Black text -> Contrast 9.5:1 (AAA) */
+    }
+
+    .color-box.dark-text {
+        background-color: var(--text-color);
+        /* Charcoal #222222 -> Contrast 15.2:1 (AAA) */
+    }
+
+    .color-box.light-bg {
+        background-color: #e9ecef;
+        color: var(--text-color);
+        border: 1px solid var(--border-color);
+    }
+
+    .color-box span {
+        display: block;
+        font-weight: bold;
+    }
+
+    .color-box code {
+        display: block;
+        font-size: 0.85rem;
+        margin: 0.3rem 0;
+    }
+
+    /* Typography Section */
+    .typography-demo {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .font-heading-sample {
+        font-family: var(--heading-font);
+        font-weight: 700;
+        font-size: 1.1rem;
+        color: var(--primary-color);
+        margin: 0.5rem 0;
+    }
+
+    .font-body-sample {
+        font-family: var(--body-font);
+        font-size: 1rem;
+        margin: 0.5rem 0;
+    }
+
+    /* Wireframe Section */
+    .wireframe-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        justify-content: center;
+        margin-top: 1rem;
+    }
+
+    .wireframe-box {
+        text-align: center;
+    }
+
+    .wireframe-box img {
+        max-width: 100%;
+        height: auto;
+        border: 1px dashed var(--primary-color);
+        border-radius: 4px;
+        margin-top: 0.5rem;
+    }
+
+    footer {
+        background-color: var(--primary-color);
+        color: var(--white);
+        text-align: center;
+        padding: 1.5rem;
+        margin-top: 3rem;
+        font-size: 0.9rem;
+    }

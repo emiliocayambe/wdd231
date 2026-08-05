@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 850" width="100%" style="background:#ffffff; border:1px solid #ccc;">
+  <!-- Grid & Guides -->
+  <style>
+    rect { fill: #f2f2f2; stroke: #666666; stroke-width: 1.5; }
+    text { font-family: sans-serif; font-size: 12px; fill: #333333; text-anchor: middle; font-weight: bold; }
+  </style>
+
+  <!-- Header -->
+  <rect x="20" y="15" width="960" height="60" rx="4" />
+  <text x="120" y="50">LOGO / TITLE</text>
+  <text x="750" y="50">Home   Services   Pricing   About Us   Contact</text>
+
+  <!-- Hero Section -->
+  <rect x="20" y="85" width="960" height="160" rx="4" />
+  <text x="500" y="130">MAIN HERO HEADING (H1)</text>
+  <text x="500" y="155">Subtitle text describing Meta WhatsApp API + Chatwoot solution</text>
+  <rect x="400" y="180" width="200" height="40" rx="20" />
+  <text x="500" y="205">[ Primary CTA Button ]</text>
+
+  <!-- Services Section (3 Columns Grid) -->
+  <text x="500" y="275">OUR SERVICES</text>
+  <rect x="20" y="290" width="300" height="130" rx="6" />
+  <rect x="40" y="305" width="35" height="35" rx="4" />
+  <text x="170" y="340">Service 1</text>
+  <text x="170" y="370">Migration details...</text>
+
+  <rect x="350" y="290" width="300" height="130" rx="6" />
+  <rect x="370" y="305" width="35" height="35" rx="4" />
+  <text x="500" y="340">Service 2</text>
+  <text x="500" y="370">Multi-agent details...</text>
+
+  <rect x="680" y="290" width="300" height="130" rx="6" />
+  <rect x="700" y="305" width="35" height="35" rx="4" />
+  <text x="830" y="340">Service 3</text>
+  <text x="830" y="370">Automation details...</text>
+
+  <!-- Pricing Section (3 Columns Grid) -->
+  <text x="500" y="450">PRICING COMPARISON</text>
+  <rect x="20" y="465" width="300" height="150" rx="6" />
+  <text x="170" y="510">Starter Desk ($49/mo)</text>
+  <rect x="70" y="550" width="200" height="35" rx="4" />
+  <text x="170" y="572">Select Plan</text>
+
+  <rect x="350" y="455" width="300" height="170" rx="6" stroke-width="3" />
+  <text x="500" y="480">[ MOST POPULAR ]</text>
+  <text x="500" y="520">Growth Desk ($129/mo)</text>
+  <rect x="400" y="560" width="200" height="35" rx="4" />
+  <text x="500" y="582">Select Plan</text>
+
+  <rect x="680" y="465" width="300" height="150" rx="6" />
+  <text x="830" y="510">Scale Desk ($299/mo)</text>
+  <rect x="730" y="550" width="200" height="35" rx="4" />
+  <text x="830" y="572">Contact Sales</text>
+
+  <!-- Assessment Form Section -->
+  <rect x="20" y="645" width="960" height="120" rx="6" />
+  <text x="500" y="670">READY FOR A FREE ASSESSMENT?</text>
+  <rect x="200" y="685" width="280" height="30" rx="4" />
+  <rect x="520" y="685" width="280" height="30" rx="4" />
+  <rect x="400" y="725" width="200" height="30" rx="4" />
+  <text x="500" y="745">Request Assessment</text>
+
+  <!-- Footer -->
+  <rect x="20" y="780" width="960" height="55" rx="4" />
+  <text x="150" y="812">Chatsqui API Solutions</text>
+  <text x="500" y="812">Social Media Icons (FB / X / IG)</text>
+  <text x="850" y="812">© 2026 All Rights Reserved</text>
+</svg>
