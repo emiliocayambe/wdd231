@@ -1,3 +1,13 @@
+/* Page heading */
+main > h1 {
+    font-family: var(--heading-font, sans-serif);
+    color: var(--primary-color, #0b2c56);
+    text-align: center;
+    font-size: 1.8rem;
+    margin: 1.5rem auto 0.5rem;
+    max-width: 1200px;
+}
+
 /* Container for Visitor Info Banner */
 #visit-message {
     background-color: var(--primary-color, #0b2c56);
