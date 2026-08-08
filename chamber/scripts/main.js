@@ -14,12 +14,15 @@ async function getWeather() {
         // Current Weather
         const current = data.list[0];
         const iconElement = document.getElementById('weather-icon');
+        const tempElement = document.getElementById('temp');
+        const descElement = document.getElementById('desc');
+
         if (iconElement) {
             iconElement.src = `https://openweathermap.org/img/wn/${current.weather[0].icon}@2x.png`;
             iconElement.alt = current.weather[0].description;
         }
-        document.getElementById('temp').innerHTML = `${Math.round(current.main.temp)}&deg;C`;
-        document.getElementById('desc').textContent = current.weather[0].description;
+        if (tempElement) tempElement.innerHTML = `${Math.round(current.main.temp)}&deg;C`;
+        if (descElement) descElement.textContent = current.weather[0].description;
 
         // Forecast 3 days
         const dailyForecasts = data.list.filter(item => item.dt_txt.includes("12:00:00"));
@@ -55,7 +58,7 @@ async function getMembers() {
     } catch (e) { console.error("Error fetching members:", e); }
 }
 
-// 3. Render Spotlights - This uses class 'home-member-card' to avoid CSS conflicts
+// 3. Render Spotlights - Uses class 'home-member-card' to avoid CSS conflicts
 function displaySpotlights(members) {
     const gridContainer = document.querySelector('.spotlight-grid');
     if (gridContainer) {
@@ -63,7 +66,7 @@ function displaySpotlights(members) {
 
         members.forEach(member => {
             let card = document.createElement('section');
-            card.className = 'home-member-card'; 
+            card.className = 'home-member-card';
 
             card.innerHTML = `
                 <img src="images/${member.image}" alt="${member.name} logo" width="100">
@@ -71,9 +74,9 @@ function displaySpotlights(members) {
                 <p class="tagline">"${member.tagline}"</p>
                 <hr>
                 <div class="card-info">
-                    <p><i class="fas fa-map-marker-alt"></i> ${member.address}</p>
-                    <p><i class="fas fa-phone"></i> ${member.phone}</p>
-                    <p><i class="fas fa-globe"></i> <a href="${member.website}" target="_blank">Visit Website</a></p>
+                    <p>${member.address}</p>
+                    <p>${member.phone}</p>
+                    <p><a href="${member.website}" target="_blank" rel="noopener noreferrer">Visit Website</a></p>
                 </div>
             `;
             gridContainer.appendChild(card);
@@ -81,8 +84,40 @@ function displaySpotlights(members) {
     }
 }
 
-// 4. Initialization
+// 4. Global Navigation Menu (Hamburger Toggle)
+function setupNavigation() {
+    const menuButton = document.getElementById('menu-button');
+    const navMenu = document.getElementById('primary-nav');
+
+    if (menuButton && navMenu) {
+        menuButton.addEventListener('click', () => {
+            menuButton.classList.toggle('open');
+            navMenu.classList.toggle('open');
+        });
+    }
+}
+
+// 5. Global Footer Dates (Year and Last Modified)
+function updateFooterDates() {
+    const yearSpan = document.getElementById('current-year');
+    const lastModifiedSpan = document.getElementById('last-modified-date');
+
+    if (yearSpan) {
+        yearSpan.textContent = new Date().getFullYear();
+    }
+
+    if (lastModifiedSpan) {
+        lastModifiedSpan.textContent = document.lastModified;
+    }
+}
+
+// 6. Initialization
 document.addEventListener('DOMContentLoaded', () => {
+    // Global features (run on every page)
+    setupNavigation();
+    updateFooterDates();
+
+    // Conditional features (run only if the DOM elements exist)
     if (document.getElementById('weather-info')) getWeather();
     if (document.getElementById('spotlights-container')) getMembers();
 });

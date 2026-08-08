@@ -141,6 +141,27 @@
         margin: 0 auto 2rem auto;
     }
 
+    .hero-label {
+        position: absolute;
+        bottom: 1rem;
+        left: 1rem;
+        right: auto;
+        width: auto;
+        max-width: 28rem;
+        margin-top: 0;
+        padding: 1.5rem;
+    }
+
+    .hero-label h1 {
+        font-size: 1.75rem;
+    }
+
+    .cta-button {
+        padding: 0.8rem 1.5rem;
+        font-size: 1rem;
+        margin-top: 1rem;
+    }
+
     .home-grid {
         display: grid;
         grid-template-columns: 2fr 1fr;

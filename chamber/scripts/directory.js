@@ -1,44 +1,6 @@
-// ==========================================================================
-// 1. NAVIGATION & HAMBURGER MENU (Safe for Desktop)
-// ==========================================================================
-const menuButton = document.querySelector('#menu-button');
-const primaryNav = document.querySelector('#primary-nav');
-
-if (menuButton && primaryNav) {
-    menuButton.addEventListener('click', () => {
-        // Toggle class to animate hamburger icon
-        menuButton.classList.toggle('open');
-
-        // Toggle class to show/hide the menu on mobile
-        primaryNav.classList.toggle('open');
-    });
-
-    // Clean up function: If the window is resized to desktop width,
-    // we make sure to clean up any left-over mobile classes.
-    window.addEventListener('resize', () => {
-        if (window.innerWidth >= 1024) { // 1024px matches our larger.css min-width
-            menuButton.classList.remove('open');
-            primaryNav.classList.remove('open');
-        }
-    });
-}
-//=========================================================================
-// 2. FOOTER DYNAMIC DATES
-// ==========================================================================
-// Set the current year
-const currentYearSpan = document.querySelector('#current-year');
-if (currentYearSpan) {
-    currentYearSpan.textContent = new Date().getFullYear();
-}
-
-// Set the last modified date
-const lastModifiedSpan = document.querySelector('#last-modified-date');
-if (lastModifiedSpan) {
-    lastModifiedSpan.textContent = document.lastModified;
-}
 
 // ==========================================================================
-// 3. FETCH AND RENDER MEMBERS DATA
+// 1. FETCH AND RENDER MEMBERS DATA
 // ==========================================================================
 // Relative path to your JSON data
 const jsonPath = 'data/members.json';
@@ -113,7 +75,7 @@ function displayMembers(members) {
 getMembersData();
 
 // ==========================================================================
-// 4. GRID VS LIST VIEW TOGGLING
+// 2. GRID VS LIST VIEW TOGGLING
 // ==========================================================================
 const gridViewBtn = document.querySelector('#grid-view-btn');
 const listViewBtn = document.querySelector('#list-view-btn');
