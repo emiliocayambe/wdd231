@@ -161,7 +161,7 @@
   margin-bottom: 1.25rem;
 }
 
-.filter-btn {
+.category-filter {
   background: var(--white);
   border: 2px solid var(--primary-color);
   color: var(--primary-color);
@@ -172,9 +172,9 @@
   transition: background-color var(--transition), color var(--transition);
 }
 
-.filter-btn:hover,
-.filter-btn:focus-visible,
-.filter-btn.active {
+.category-filter:hover,
+.category-filter:focus-visible,
+.category-filter.is-selected {
   background: var(--primary-color);
   color: var(--white);
 }
@@ -185,7 +185,7 @@
   gap: 1rem;
 }
 
-.service-card {
+.service-tile {
   background: var(--white);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
@@ -208,7 +208,7 @@
   }
 }
 
-.service-card h3 {
+.service-tile h3 {
   font-size: 1.15rem;
   margin-bottom: 0.15rem;
 }
@@ -221,7 +221,7 @@
   margin-bottom: 0.35rem;
 }
 
-.badge {
+.category-tag {
   display: inline-block;
   background: #e7f3f1;
   color: var(--secondary-text);
@@ -237,12 +237,12 @@
   color: var(--primary-color);
 }
 
-.service-card p {
+.service-tile p {
   color: var(--text-muted);
   margin-bottom: 0.75rem;
 }
 
-.card-icon {
+.tile-icon {
   width: 2.25rem;
   height: 2.25rem;
   color: var(--secondary-text);
@@ -265,11 +265,11 @@
   background: rgba(11, 44, 86, 0.65);
 }
 
-.modal-content {
+.dialog-panel {
   padding: 1.5rem;
 }
 
-.modal-header {
+.dialog-heading {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -277,12 +277,12 @@
   margin-bottom: 1rem;
 }
 
-.modal-header h2 {
+.dialog-heading h2 {
   margin: 0;
   font-size: 1.35rem;
 }
 
-.modal-close {
+.dialog-close {
   background: var(--primary-color);
   color: var(--white);
   border: none;
@@ -295,17 +295,17 @@
   flex-shrink: 0;
 }
 
-.modal-close:hover,
-.modal-close:focus-visible {
+.dialog-close:hover,
+.dialog-close:focus-visible {
   background: var(--secondary-text);
 }
 
-.modal-features {
+.dialog-features {
   margin: 0.75rem 0 0;
   padding-left: 1.2rem;
 }
 
-.modal-features li {
+.dialog-features li {
   margin-bottom: 0.35rem;
 }
 
@@ -342,11 +342,11 @@
   border-top: 4px solid var(--secondary-color);
 }
 
-.form-group {
+.field-block {
   margin-bottom: 1rem;
 }
 
-.form-group label {
+.field-block label {
   display: block;
   font-weight: 700;
   margin-bottom: 0.35rem;
@@ -357,9 +357,9 @@
   color: #842029;
 }
 
-.form-group input,
-.form-group select,
-.form-group textarea {
+.field-block input,
+.field-block select,
+.field-block textarea {
   width: 100%;
   padding: 0.7rem 0.8rem;
   border: 2px solid var(--border-color);
@@ -367,18 +367,18 @@
   background: var(--white);
 }
 
-.form-group input:focus,
-.form-group select:focus,
-.form-group textarea:focus {
+.field-block input:focus,
+.field-block select:focus,
+.field-block textarea:focus {
   border-color: var(--secondary-color);
 }
 
-.form-group textarea {
+.field-block textarea {
   min-height: 8rem;
   resize: vertical;
 }
 
-.form-hint {
+.field-note {
   display: block;
   font-size: 0.85rem;
   color: var(--text-muted);

@@ -121,7 +121,7 @@
     grid-template-columns: 1.6fr 1fr;
   }
 
-  .modal-content {
+  .dialog-panel {
     padding: 1.75rem;
   }
 }

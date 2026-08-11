@@ -8,7 +8,7 @@ const grid = document.getElementById("services-grid");
 const filterBar = document.getElementById("filter-bar");
 const modal = document.getElementById("service-modal");
 const modalBody = document.getElementById("modal-body");
-const modalCloseBtn = document.getElementById("modal-close");
+const modalCloseBtn = document.getElementById("dialog-close");
 
 /** @type {Array<Object>} */
 let allServices = [];
@@ -60,17 +60,17 @@ function buildFilterButtons(services) {
   categories.forEach((category, index) => {
     const button = document.createElement("button");
     button.type = "button";
-    button.className = `filter-btn${index === 0 ? " active" : ""}`;
+    button.className = `category-filter${index === 0 ? " is-selected" : ""}`;
     button.dataset.category = category;
     button.setAttribute("aria-pressed", index === 0 ? "true" : "false");
     button.textContent = category;
 
     button.addEventListener("click", () => {
-      filterBar.querySelectorAll(".filter-btn").forEach((btn) => {
-        btn.classList.remove("active");
+      filterBar.querySelectorAll(".category-filter").forEach((btn) => {
+        btn.classList.remove("is-selected");
         btn.setAttribute("aria-pressed", "false");
       });
-      button.classList.add("active");
+      button.classList.add("is-selected");
       button.setAttribute("aria-pressed", "true");
 
       const filtered =
@@ -102,21 +102,21 @@ function renderServices(services) {
 
   services.forEach((service) => {
     const card = document.createElement("article");
-    card.className = "service-card";
+    card.className = "service-tile";
     card.innerHTML = `
-      <div class="card-icon" aria-hidden="true">${getIconSvg(service.icon)}</div>
+      <div class="tile-icon" aria-hidden="true">${getIconSvg(service.icon)}</div>
       <h3>${escapeHtml(service.name)}</h3>
       <div class="service-meta">
-        <span class="badge">${escapeHtml(service.category)}</span>
+        <span class="category-tag">${escapeHtml(service.category)}</span>
         <span class="price">$${Number(service.price).toLocaleString("en-US")}</span>
       </div>
       <p>${escapeHtml(service.description)}</p>
-      <button type="button" class="btn btn-teal details-btn" data-id="${service.id}">
+      <button type="button" class="site-button site-button-accent details-action" data-id="${service.id}">
         View Details
       </button>
     `;
 
-    const detailsBtn = card.querySelector(".details-btn");
+    const detailsBtn = card.querySelector(".details-action");
     detailsBtn.addEventListener("click", () => openServiceModal(service, detailsBtn));
 
     grid.appendChild(card);
@@ -139,12 +139,12 @@ function openServiceModal(service, trigger) {
 
   modalBody.innerHTML = `
     <div class="service-meta">
-      <span class="badge">${escapeHtml(service.category)}</span>
+      <span class="category-tag">${escapeHtml(service.category)}</span>
       <span class="price">$${Number(service.price).toLocaleString("en-US")}</span>
     </div>
     <p>${escapeHtml(service.description)}</p>
     <h3>Included Features</h3>
-    <ul class="modal-features">
+    <ul class="dialog-features">
       ${featuresList}
     </ul>
     <p><strong>Module ID:</strong> ${escapeHtml(String(service.id))}</p>

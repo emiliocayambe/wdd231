@@ -226,7 +226,7 @@ body > header {
 
 .nav-menu a:hover,
 .nav-menu a:focus-visible,
-.nav-menu a.active {
+.nav-menu a.current {
   background-color: #c9b37f;
   color: var(--text-dark);
 }
@@ -256,17 +256,17 @@ main {
   color: var(--primary-color);
 }
 
-.page-intro .lead {
+.page-intro .intro-copy {
   color: var(--text-muted);
 }
 
-.lead {
+.intro-copy {
   color: var(--text-muted);
   font-size: 1.05rem;
   max-width: 40rem;
 }
 
-.btn {
+.site-button {
   display: inline-block;
   background-color: var(--primary-color);
   color: var(--white);
@@ -280,41 +280,41 @@ main {
   transition: background-color var(--transition), color var(--transition), border-color var(--transition);
 }
 
-.btn:hover,
-.btn:focus-visible {
+.site-button:hover,
+.site-button:focus-visible {
   background-color: #071f3d;
   border-color: #071f3d;
   color: var(--white);
   text-decoration: none;
 }
 
-.btn-secondary {
+.site-button-outline {
   background-color: transparent;
   color: var(--primary-color);
   border-color: var(--primary-color);
 }
 
-.btn-secondary:hover,
-.btn-secondary:focus-visible {
+.site-button-outline:hover,
+.site-button-outline:focus-visible {
   background-color: var(--primary-color);
   color: var(--white);
   border-color: var(--primary-color);
 }
 
-.btn-teal {
+.site-button-accent {
   background-color: #09574f;
   border-color: #09574f;
   color: var(--white);
 }
 
-.btn-teal:hover,
-.btn-teal:focus-visible {
+.site-button-accent:hover,
+.site-button-accent:focus-visible {
   background-color: #07443e;
   border-color: #07443e;
   color: var(--white);
 }
 
-.visually-hidden {
+.screen-reader-text {
   position: absolute !important;
   width: 1px;
   height: 1px;

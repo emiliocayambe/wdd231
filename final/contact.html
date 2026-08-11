@@ -68,7 +68,7 @@
         <ul class="nav-menu">
           <li><a href="index.html">Home</a></li>
           <li><a href="services.html">Services</a></li>
-          <li><a href="contact.html" class="active" aria-current="page">Contact</a></li>
+          <li><a href="contact.html" class="current" aria-current="page">Contact</a></li>
         </ul>
       </nav>
     </div>
@@ -78,7 +78,7 @@
     <div class="contact-layout">
       <div class="contact-intro page-intro">
         <h1>Request a consultation</h1>
-        <p class="lead">
+        <p class="intro-copy">
           Share your business details and the integration you need. We will follow up with a technical
           assessment covering Cloud API readiness, Chatwoot inbox design, and estimated timeline.
         </p>
@@ -86,33 +86,33 @@
 
       <div class="contact-form-wrap">
         <form id="contact-form" method="get" action="thankyou.html">
-          <div class="form-group">
+          <div class="field-block">
             <label for="fullname">Full name <span class="required" aria-hidden="true">*</span></label>
             <input type="text" id="fullname" name="fullname" autocomplete="name" required title="Enter your full name"
               minlength="2">
           </div>
 
-          <div class="form-group">
+          <div class="field-block">
             <label for="email">Business email <span class="required" aria-hidden="true">*</span></label>
             <input type="email" id="email" name="email" autocomplete="email" required
               title="Enter a valid business email address" placeholder="name@company.com">
           </div>
 
-          <div class="form-group">
+          <div class="field-block">
             <label for="phone">Phone <span class="required" aria-hidden="true">*</span></label>
             <input type="tel" id="phone" name="phone" autocomplete="tel" required
               title="Enter a phone number with country code" placeholder="+593 99 123 4567"
               pattern="[\d\s\+\-\(\)]{7,20}">
-            <span class="form-hint" id="phone-hint">Include country code when possible.</span>
+            <span class="field-note" id="phone-hint">Include country code when possible.</span>
           </div>
 
-          <div class="form-group">
+          <div class="field-block">
             <label for="business">Business name <span class="required" aria-hidden="true">*</span></label>
             <input type="text" id="business" name="business" autocomplete="organization" required
               title="Enter your company or organization name" minlength="2">
           </div>
 
-          <div class="form-group">
+          <div class="field-block">
             <label for="category">Integration category <span class="required" aria-hidden="true">*</span></label>
             <select id="category" name="category" required>
               <option value="">Select a category</option>
@@ -127,7 +127,7 @@
             </select>
           </div>
 
-          <div class="form-group">
+          <div class="field-block">
             <label for="comments">Comments</label>
             <textarea id="comments" name="comments" rows="5" title="Describe your current WhatsApp setup and goals"
               placeholder="Describe your current WhatsApp setup, team size, and goals."></textarea>
@@ -135,7 +135,7 @@
 
           <input type="hidden" id="contact-timestamp" name="timestamp" value="">
 
-          <button type="submit" class="btn">Submit Request</button>
+          <button type="submit" class="site-button">Submit Request</button>
         </form>
       </div>
 
@@ -146,7 +146,7 @@
           <li>You receive a short discovery call focused on Meta Cloud API readiness.</li>
           <li>We deliver a migration outline with recommended modules and pricing.</li>
         </ol>
-        <p><a class="btn btn-secondary" href="services.html">Browse modules first</a></p>
+        <p><a class="site-button site-button-outline" href="services.html">Browse modules first</a></p>
       </aside>
     </div>
   </main>
