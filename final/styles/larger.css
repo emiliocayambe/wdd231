@@ -1,0 +1,127 @@
+/* ==========================================================================
+   larger.css — Tablet (641px+) and desktop (1025px+) enhancements
+   Chatsqui API Solutions | WDD 231 Final Project
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Tablet and up
+   -------------------------------------------------------------------------- */
+
+@media (min-width: 641px) {
+  body > header {
+    padding: 0.85rem 1.5rem;
+  }
+
+  main {
+    padding: 1.75rem 1.5rem 3rem;
+  }
+
+  .home-layout {
+    grid-template-areas:
+      "hero hero"
+      "features features"
+      "cta cta";
+  }
+
+  .hero {
+    grid-template-columns: 1.4fr 1fr;
+    grid-template-areas: "copy visual";
+    padding: 2.25rem 2rem;
+    min-height: 22rem;
+  }
+
+  .feature-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contact-layout {
+    grid-template-columns: 1.4fr 1fr;
+    grid-template-areas:
+      "intro intro"
+      "form aside";
+    align-items: start;
+  }
+
+  .submission-list li {
+    grid-template-columns: 11rem 1fr;
+    align-items: baseline;
+    gap: 1rem;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1.4fr 1fr 1fr;
+    align-items: start;
+  }
+
+  .footer-meta {
+    grid-column: 1 / -1;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Desktop and up
+   -------------------------------------------------------------------------- */
+
+@media (min-width: 1025px) {
+  .header-bar {
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+
+  #menu-button {
+    display: none;
+  }
+
+  #primary-nav {
+    display: block;
+    width: auto;
+    margin-top: 0;
+    margin-left: auto;
+    order: 0;
+  }
+
+  .nav-menu {
+    flex-direction: row;
+    gap: 0.35rem;
+  }
+
+  .nav-menu a {
+    border-bottom: none;
+    border-radius: var(--radius);
+    padding: 0.55rem 1rem;
+  }
+
+  .home-layout {
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas:
+      "hero hero"
+      "features cta";
+    align-items: start;
+  }
+
+  .feature-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .cta-panel {
+    position: sticky;
+    top: 1rem;
+  }
+
+  #services-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+  }
+
+  .contact-layout {
+    grid-template-columns: 1.6fr 1fr;
+  }
+
+  .modal-content {
+    padding: 1.75rem;
+  }
+}

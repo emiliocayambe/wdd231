@@ -1,0 +1,254 @@
+[
+  {
+    "id": 1,
+    "name": "WhatsApp Cloud API Setup",
+    "category": "Onboarding",
+    "price": 299,
+    "description": "Complete Meta WhatsApp Business Cloud API provisioning with verified business profile and phone number registration.",
+    "features": [
+      "Meta Business Manager setup",
+      "Official phone number verification",
+      "Display name and profile configuration",
+      "Sandbox-to-production cutover checklist"
+    ],
+    "icon": "cloud"
+  },
+  {
+    "id": 2,
+    "name": "Chatwoot Inbox Integration",
+    "category": "Integration",
+    "price": 349,
+    "description": "Connect your WhatsApp Cloud API channel to a shared Chatwoot inbox so multiple agents can reply in real time.",
+    "features": [
+      "Chatwoot channel connector",
+      "Agent role and team mapping",
+      "Conversation assignment rules",
+      "Message sync and status webhooks"
+    ],
+    "icon": "inbox"
+  },
+  {
+    "id": 3,
+    "name": "Multi-Agent Shared Number",
+    "category": "Operations",
+    "price": 199,
+    "description": "Enable five or more agents to operate one official WhatsApp number without device conflicts or Meta blocks.",
+    "features": [
+      "Concurrent agent sessions",
+      "Ownership handoff controls",
+      "Presence and typing indicators",
+      "Audit-ready conversation logs"
+    ],
+    "icon": "users"
+  },
+  {
+    "id": 4,
+    "name": "Message Template Studio",
+    "category": "Messaging",
+    "price": 179,
+    "description": "Design, submit, and manage Meta-approved message templates for notifications, reminders, and marketing.",
+    "features": [
+      "Template drafting workspace",
+      "Category and language variants",
+      "Meta review submission",
+      "Approval status tracking"
+    ],
+    "icon": "template"
+  },
+  {
+    "id": 5,
+    "name": "Automated Order Notifications",
+    "category": "Automation",
+    "price": 249,
+    "description": "Trigger transactional WhatsApp alerts for order confirmation, shipping, and delivery across your store stack.",
+    "features": [
+      "Order lifecycle event hooks",
+      "Dynamic template variables",
+      "Failed-delivery retry queue",
+      "Storefront webhook adapters"
+    ],
+    "icon": "bell"
+  },
+  {
+    "id": 6,
+    "name": "CRM Contact Sync",
+    "category": "Integration",
+    "price": 279,
+    "description": "Bidirectional contact and conversation sync between WhatsApp/Chatwoot and your CRM of record.",
+    "features": [
+      "Contact field mapping",
+      "Deal and ticket linking",
+      "Duplicate merge safeguards",
+      "Nightly reconciliation jobs"
+    ],
+    "icon": "sync"
+  },
+  {
+    "id": 7,
+    "name": "Conversation Analytics Pack",
+    "category": "Analytics",
+    "price": 159,
+    "description": "Measure response times, resolution rates, and template performance with dashboards built for SME teams.",
+    "features": [
+      "First-response time metrics",
+      "Agent productivity boards",
+      "Template delivery reports",
+      "CSV and PDF exports"
+    ],
+    "icon": "chart"
+  },
+  {
+    "id": 8,
+    "name": "Opt-In Consent Gateway",
+    "category": "Compliance",
+    "price": 189,
+    "description": "Capture and store WhatsApp marketing opt-ins with auditable consent timestamps for Meta policy alignment.",
+    "features": [
+      "Web and QR opt-in forms",
+      "Consent evidence storage",
+      "Unsubscribe keyword handling",
+      "Policy-ready audit exports"
+    ],
+    "icon": "shield"
+  },
+  {
+    "id": 9,
+    "name": "Broadcast Campaign Engine",
+    "category": "Messaging",
+    "price": 329,
+    "description": "Segment audiences and send approved broadcast campaigns with pacing controls and delivery monitoring.",
+    "features": [
+      "Audience segmentation",
+      "Campaign scheduling",
+      "Throttle and quiet hours",
+      "Bounce and blocklist handling"
+    ],
+    "icon": "broadcast"
+  },
+  {
+    "id": 10,
+    "name": "Chatbot Flow Builder",
+    "category": "Automation",
+    "price": 399,
+    "description": "Build guided WhatsApp chat flows for FAQs, lead qualification, and after-hours triage before agent handoff.",
+    "features": [
+      "Visual flow designer",
+      "Keyword and menu routing",
+      "Human takeover triggers",
+      "Multilingual reply nodes"
+    ],
+    "icon": "bot"
+  },
+  {
+    "id": 11,
+    "name": "Media Asset Pipeline",
+    "category": "Messaging",
+    "price": 149,
+    "description": "Optimize and deliver images, PDFs, and audio over WhatsApp with size validation and CDN caching.",
+    "features": [
+      "Media compression presets",
+      "MIME type validation",
+      "Secure temporary URLs",
+      "Delivery failure alerts"
+    ],
+    "icon": "media"
+  },
+  {
+    "id": 12,
+    "name": "Webhook Reliability Shield",
+    "category": "Operations",
+    "price": 219,
+    "description": "Harden inbound Meta webhooks with signature verification, retries, and dead-letter recovery.",
+    "features": [
+      "HMAC signature checks",
+      "Idempotent event processing",
+      "Exponential retry policy",
+      "Dead-letter inspection UI"
+    ],
+    "icon": "webhook"
+  },
+  {
+    "id": 13,
+    "name": "Payment Link Assistant",
+    "category": "Commerce",
+    "price": 269,
+    "description": "Send secure payment links inside WhatsApp conversations and track paid versus abandoned checkouts.",
+    "features": [
+      "Payment provider connectors",
+      "One-tap checkout links",
+      "Paid status callbacks",
+      "Abandoned cart follow-ups"
+    ],
+    "icon": "payment"
+  },
+  {
+    "id": 14,
+    "name": "Catalog Product Browser",
+    "category": "Commerce",
+    "price": 309,
+    "description": "Publish a WhatsApp product catalog so customers can browse SKUs and start checkout conversations instantly.",
+    "features": [
+      "Meta catalog synchronization",
+      "SKU and inventory mapping",
+      "Product inquiry templates",
+      "Category and price filters"
+    ],
+    "icon": "catalog"
+  },
+  {
+    "id": 15,
+    "name": "SLA Escalation Router",
+    "category": "Operations",
+    "price": 239,
+    "description": "Route overdue conversations to supervisors with SLA timers, priority queues, and escalation playbooks.",
+    "features": [
+      "Custom SLA timers",
+      "Priority queue rules",
+      "Supervisor alerts",
+      "Escalation playbook notes"
+    ],
+    "icon": "sla"
+  },
+  {
+    "id": 16,
+    "name": "Migration Assessment Lab",
+    "category": "Onboarding",
+    "price": 129,
+    "description": "Technical and financial assessment comparing the free WhatsApp Business app with Cloud API plus Chatwoot.",
+    "features": [
+      "Current-state architecture review",
+      "Cost-of-ownership model",
+      "Risk and blocklist analysis",
+      "90-day migration roadmap"
+    ],
+    "icon": "lab"
+  },
+  {
+    "id": 17,
+    "name": "Quality Rating Coach",
+    "category": "Analytics",
+    "price": 169,
+    "description": "Monitor Meta quality ratings and coach teams with actionable fixes before messaging limits tighten.",
+    "features": [
+      "Quality score monitoring",
+      "Block and report insights",
+      "Agent coaching briefs",
+      "Limit-risk early warnings"
+    ],
+    "icon": "quality"
+  },
+  {
+    "id": 18,
+    "name": "Secure Access & SSO Pack",
+    "category": "Compliance",
+    "price": 259,
+    "description": "Lock down Chatwoot and API consoles with SSO, MFA enforcement, and role-based least-privilege access.",
+    "features": [
+      "SSO identity provider hooks",
+      "Mandatory MFA policies",
+      "Role-based permissions",
+      "Access review reports"
+    ],
+    "icon": "lock"
+  }
+]
