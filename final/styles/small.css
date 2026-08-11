@@ -81,9 +81,12 @@
   animation: pulse-ring 3.5s ease-in-out infinite;
 }
 
-.hero-mark svg {
+.hero-mark svg,
+.hero-mark .hero-logo-img {
   width: 70%;
   height: auto;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 @keyframes pulse-ring {
